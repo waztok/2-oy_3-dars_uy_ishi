@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int funksiya(int n) {
+    if (n == 0) {
+        return 0;
+    }
+    return n + funksiya(n - 1);
+    
+}
+
+int main() {
+   int i;
+    scanf("%d", &i);
+    int natija = funksiya(i);
+    printf("%d", natija);
+
+    return 0;
+}
